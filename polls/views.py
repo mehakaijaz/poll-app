@@ -99,7 +99,7 @@ def polls_edit(request, poll_id):
     else:
         form = EditPollForm(instance=poll)
 
-    return render(request, "polls/polls_edit.html", {'form': form, 'poll': poll})
+    return render(request, "polls/poll_edit.html", {'form': form, 'poll': poll})
 
 
 @login_required
